@@ -1,1 +1,15 @@
-hii
+num=int(input("Enter the input number: "))
+s=1
+
+if(num % 2!=0):
+  print("\nThe corresponding series is: \n")
+  for i in range(num):
+    print(s,end=" ")
+    s=s+2
+    
+else:
+  print("\nThe corresponding series is: \n")
+  for i in range(num-1):
+    print(s,end=" ")
+    s=s+2
+  
