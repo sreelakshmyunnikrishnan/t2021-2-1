@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResponsivePage</title>
 
+    
+<style>
+
+.header{
+
+    background-color: blueviolet;
+    height: 100px;
+    }
+.navbar{
+
+    float:left;
+
+}
+
+    
+
+li{
+
+    list-style-type: none;
+    display:block;
+    background-color:deepskyblue;
+    height:50px;
+    width:350px;
+}
+
+.sidebar{
+
+    background-color: deepskyblue;
+    height:690px;
+    width:200px;
+    float:right;
+}
+.footer{
+
+    background-color: dodgerblue;
+    height: 100px;
+    margin-top:700px;   
+}
+
+/* for mobile phones */
+@media only screen and (max-width: 576px) {
+  .navbar {
+    width: 100%;
+  }
+  .sidebar{
+      width:100%;    
+  }
+/* for tablets */
+@media (max-width: 768px) { 
+
+    .sidebar{width:100%}
+ }
+
+}
+
+</style>
+</head>
+
+<body>
+    <div class="container">
+    <div class="header" ></div><br>
+
+    <div >
+    <ul class="navbar">
+
+        <li><a href=""></a></li><br>
+        <li><a href=""></a></li><br>
+        <li><a href=""></a></li><br>
+        <li><a href=""></a></li><br>
+
+    </ul>
+
+    <div class="sidebar"></div><br>
+    </div>
+
+<div class="footer" ></div>
+
+</div>
+</body>
+</html>
