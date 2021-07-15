@@ -1,1 +1,46 @@
-hii
+class calc:
+
+  def add(self):
+    return(a+b)
+    
+  def subtract(self):
+    return(a-b)
+    
+  def multiply(self):
+    return(a*b)
+    
+  def divide(self):
+    return(a/b)
+
+obj=calc()
+
+print("WELCOME TO CALCULATOR")
+print(" Add\n Subtract\n Multiply\n Divide\n Exit\n ")
+
+a=float(input("Enter the first number: "))
+b=float(input("Enter the second number: "))
+
+
+x=0
+while x<10:
+  opr=input("\n Enter the operation you want to perform: \n")
+  
+  if (opr=="Add"):
+    print("The Sum of numbers is :",obj.add())
+    
+  elif (opr=="Subtract"):
+    print("The Difference between numbers is :",obj.subtract())
+    
+  elif (opr=="Multiply"):
+    print("The Product of numbers is: ",obj.multiply())
+    
+  elif (opr=="Divide"):
+    print("The Division of numbers is: ",obj.divide())
+    
+  elif (opr=="Exit"):
+    print("Thank You")
+    print("WELCOME AGAIN")
+    
+  else:
+    print("Incorrect Operation, Please try again")
+
